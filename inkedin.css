@@ -1,0 +1,514 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+body{
+    background-color: rgb(8, 8, 8);
+    
+}
+nav .wrapper{
+display:flex;
+justify-content: space-between;
+align-items: center;
+gap: 1rem;
+padding: 0.3rem 4rem;
+background: rgb(72, 77, 78);
+}
+
+nav .wrapper .left,
+nav .wrapper .right{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 2rem;
+}
+nav .wrapper .left{
+    padding-left: 3rem;
+    display: flex;
+    gap: 0.7rem;
+    margin-left: 2;
+}
+nav .wrapper .logo i{
+    font-size: 2rem;
+    cursor: pointer;
+    color:aliceblue;
+}
+nav .wrapper .left .input{
+    background:rgb(69, 78, 80);
+    width:100%;
+    padding: 0.5rem 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+ border-radius: 0.2rem;
+}
+nav .wrapper .left .input input[ type='search']{
+    width: 15rem;
+    border: none;
+    background: transparent;
+}
+nav .wrapper .left .input input[ type='search']::placeholder{
+    font-size: 0.7rem;
+    color:aliceblue;
+    font-weight: 100;
+
+}
+nav .wrapper .left .input i{
+    font-size: 0.8rem;
+    color:gray
+}
+nav .wrapper .right .home,
+nav .wrapper .right .network,
+nav .wrapper .right .jobs,
+nav .wrapper .right .message,
+nav .wrapper .right .notifications,
+nav .wrapper .right .me,
+nav .wrapper .right .work{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    color: aliceblue;
+}
+nav .wrapper .right .home ,
+nav .wrapper .right .network :hover,
+nav .wrapper .right .jobs:hover,
+nav .wrapper .right .message:hover,
+nav .wrapper .right .notifications:hover,
+nav .wrapper .right .me .down:hover
+nav .wrapper .right .work .down:hover{
+    color: gray;
+
+
+}
+
+
+nav .wrapper .right .home i,
+nav .wrapper .right .network i,
+nav .wrapper .right .jobs i,
+nav .wrapper .right .message i,
+nav .wrapper .right .notification i{
+    font-size: 1.2rem;
+}
+nav .wrapper .right .me .down,
+nav .wrapper .right .work .down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: gray;
+}nav .wrapper .right .me i:first-child{
+    background: gray;
+    color: #fff;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.wrapper a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    width: 7rem;
+    text-align: center;
+    cursor: pointer;
+    color: gray;
+}
+.wrapper a:hover{
+text-decoration: underline;
+}/*  side bar */
+.container{
+
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    gap: 1.4rem;
+    width: 85%;
+    margin:1.8rem auto;
+}
+aside .sidebar{
+    background: rgb(72, 77, 78);
+    width: 100%;
+    height: 42vh;
+    border-radius: 0.8rem;
+overflow:hidden;
+}
+.sidebar .top{
+width: 17%;
+height: 9vh;
+background-color:rgb(82,92,105) ;
+position: absolute;
+border-radius: 0.8rem 0.8rem 0 0;
+
+}
+.sidebar img{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top:3%;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid rgb(72, 77, 78);
+}
+aside .sidebar .profile{
+    position: relative;
+    align-items: center;
+    top: 3%;
+    display: flex;
+    flex-direction:column ;
+    border-bottom: 1px solid rgb(185,185,185);
+height: 10vh;
+
+}
+.sidebar .profile a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.sidebar .profile a:hover{
+
+    text-decoration: underline;
+}
+.sidebar .profile small{
+    font-size: 0.7rem;
+    color: gainsboro;
+}
+
+.sidebar .view{
+
+    position: relative;
+    display:flex;
+flex-direction: column;
+    top: 5.5%;
+    border-bottom: 1px solid rgb(185,185,185);
+}
+
+
+.sidebar .view .views{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 0.5rem;
+cursor: pointer;
+font-weight: 100;
+padding-bottom:0.1rem;
+} 
+
+.sidebar .view .views:hover{
+
+    background-color: gray;
+}
+.sidebar .view .views h6{
+font-weight: 100;
+    color: gainsboro;
+}
+
+.sidebar .view .views a{
+
+    color: aquamarine;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+.sidebar .premium{
+
+    position: relative;
+    top: 6%;
+}.sidebar .premium h6{
+
+    color: gainsboro;
+    font-weight: 100;
+    margin-left: 0.2rem;
+}
+.sidebar .premium a{
+
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 3rem;
+    font-size: 0.8rem;
+    color: aliceblue;
+}
+.sidebar .premium a i{
+    color:rgb(211,211,33);
+}
+
+hr#premium{
+
+    margin:0.5rem 0;
+}
+
+.items{
+    position: relative;
+    top: 7%;
+    display: flex;
+    gap: 0.5rem;
+    margin: 0.4rem 0 0 1rem;
+    color: azure;
+    cursor: pointer;
+}
+.visit h1{
+    font-weight: 500;
+    margin-left: 0.2rem ;
+    color: azure;
+
+}
+.visit{
+margin-top: 0.5rem;
+    background: rgb(72, 77, 78);
+    height: 18vh;
+width: 100%;
+border-radius: 0.8rem;
+
+}
+.visit .visi{
+    
+    color: gray;
+    padding:  0.2rem 0.5rem;
+    border-bottom: 1px solid gray;
+}
+.visit .visi .vis{
+
+    display: flex;
+}
+
+.visit .visi .vis a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    margin-left: auto;
+    color: aquamarine;
+}
+.visit .visi .vis h6{
+    font-weight: 100;
+    color: aliceblue;
+}
+.analytics h6{
+
+    align-items: center;
+    color: azure;
+}
+aside .recentjobs{
+    background: rgb(72, 77, 78);
+    margin-top: 0.5rem;
+    width: 100%;
+    height: 47vh;
+    position: relative;
+    border-radius: 0.8rem;
+overflow:hidden;
+}
+
+aside .recentjobs .recent{
+
+    margin: 1rem;
+    color: aliceblue;
+}
+
+aside .recentjobs .recent h6{
+    font-weight: 100;
+    color: azure;
+    
+}
+
+aside .recentjobs .recent .one{
+
+    display:flex;
+    margin-top: 0.7rem;
+    align-items: center;
+    gap: 0.5rem;
+
+    color: azure;
+}
+
+aside .recentjobs .recent .one i{
+
+    font-size: 0.8rem;
+}
+aside .recentjobs .groups .two{
+
+    display:flex;
+    margin-top: 0.7rem;
+    align-items: center;
+    gap: 0.5rem;
+ margin: 1rem;
+    color: aliceblue;
+}
+aside .recentjobs .groups h6:first-child{
+    color: #0a66c2;
+    margin: 1rem;
+}
+
+.groups .show{
+
+    display: flex;
+    margin-top: 1rem;
+    gap: 0.5rem;
+    color: gray;
+}
+.groups .show h6{
+    color: aliceblue;
+}
+/*  main section starts  */
+
+main .media{
+
+    background-color: rgb(72, 77, 78);
+    border-radius: 0.8rem;
+    height: 20vh;
+    margin-top: 0.5rem;
+}
+main .media .search{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+main .media .search img{
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+
+}
+main .media .search input{
+    border-radius: 5rem;
+    border: 1px solid aliceblue;
+    width: 100%;
+    padding:  0 0.5rem;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    background-color: rgb(72, 77, 78);
+}
+main .media .search input[ type='search']::placeholder{
+    font-size: 0.7rem;
+    color:aliceblue;
+    font-weight: 100;
+}
+main .media .search input:hover{
+
+    background: rgb(233,233,233);
+}
+
+main .media .posts {
+    display: flex;
+    justify-content:space-between ;
+    margin: 0.6rem 2rem;
+}
+
+main .media .posts .post{
+    display: flex;
+    gap: 1rem;
+    padding: 0.6rem 0.5rem;
+    opacity: 0.7;
+}
+main .media .posts .post h5{
+    color: aliceblue;
+}
+
+main .media .posts .post:nth-child(1) i{
+    color: #0a66c2;
+}
+main .media .posts .post:nth-child(2) i{
+    color: #19c20a;
+}
+main .media .posts .post:nth-child(3) i{
+    color: #8a31dd;
+}
+main .media .posts .post:nth-child(4) i{
+    color:  #dd31b8;
+}
+
+main .poster .postavatar img{
+    border-radius: 50%;
+  width: 40px;
+  height: 40px;
+
+}
+main .poster {
+    padding: 14px;
+    background-color: rgb(72, 77, 78);
+    border-radius: 0.8rem;
+    height: 90vh;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--twitter-background);
+}
+main .poster .postbody img{
+    width: 450px;
+    object-fit: contain;
+    border-radius: 20px;
+}
+main .poster .postbody .postheader .postheadertext h3{
+    color: aliceblue;
+}
+main .poster .postbody .postheader .postheadertext h3 span{
+    color: gray;
+}
+main .poster .postbody .postheader .postheaderdescription p{
+    color: aliceblue;
+}
+
+
+/*   right side starts   */
+.rightside{
+    background-color: rgb(72, 77, 78);
+    border-radius: 0.8rem;
+    height: 65vh;
+
+}
+
+
+.rightside .add .recommend{
+    font-weight: 500;
+    color: aliceblue;
+    padding-left: 10px;
+    padding-top: auto;
+}
+.rightside .recommend i{
+    color: aliceblue;
+}
+.add{
+    padding:1rem ;
+}
+.add h4{
+    font-weight: 600;
+}
+.add .friend img{
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+
+}
+.add .friend{
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: flex-start;
+}
+.add h4,
+.add .friend .frinfo h4,
+.add .friend .frinfo h5{
+    color: aliceblue;
+}
+
+
+.add  .friend .frinfo button{
+    border-radius: 5rem;
+    border: 1px solid aliceblue;
+    color: aliceblue;
+    width: 6rem;
+    height: 2.8rem;
+    background-color:rgb(72, 77, 78) ;
+    
+}
+.img img{
+    border-radius: 0.8rem;
+    height: 50vh;
+    width: 50vh;
+    margin-top: 0.5rem;
+    margin-right: auto;
+}
